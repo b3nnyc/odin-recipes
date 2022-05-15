@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+}
+
+.nav {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid black;
+  height: 100px;
+}
+
+.nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo {
+  margin-right: 7%;
+}
+
+.nav__logo img {
+  width: 70px;
+}
+
+.nav__title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 250px;
+}
+
+.nav__search {
+  border: none;
+  width: 200px;
+  padding-left: 60px;
+}
+
+.giphy-embed {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: block;
+  border-radius: 15px;
+  width: 480px;
+  height: 360px;
+}
+
+.recipes__title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.recipes__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.recipes__lasagna, .recipes__shep, .recipes__confit {
+  border: 1px solid black;
+  width: 30vw;
+  height: 200px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  font-style: none;
+}
+
+.recipes__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
