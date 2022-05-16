@@ -2,6 +2,15 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Italian;
+  src: url(/assets/Italian.otf);
+}
+
 .nav {
   margin: auto;
   display: -webkit-box;
@@ -10,8 +19,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid black;
   height: 100px;
+  background-color: red;
 }
 
 .nav-left {
@@ -28,18 +38,22 @@
 }
 
 .nav__logo {
-  margin-right: 7%;
+  margin-right: 4%;
 }
 
 .nav__logo img {
   width: 70px;
+  -webkit-filter: invert(100%);
 }
 
 .nav__title {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  width: 250px;
+  font-family: Italian;
+  font-size: 3.5rem;
+  color: white;
+  width: 400px;
 }
 
 .nav__search {
@@ -48,10 +62,15 @@
   padding-left: 60px;
 }
 
+.parent {
+  background-color: #E9E9EC;
+  padding-top: 5%;
+  height: 85vh;
+}
+
 .giphy-embed {
   margin: auto;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   display: block;
   border-radius: 15px;
   width: 480px;
@@ -60,7 +79,9 @@
 
 .recipes__title {
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+  font-family: Italian;
+  font-size: 2.5rem;
 }
 
 .recipes__container {
@@ -83,6 +104,20 @@
   padding-bottom: 5%;
   padding-left: 5%;
   font-style: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recipes__lasagna {
+  background-image: url(/assets/lasagna.jpeg);
+}
+
+.recipes__shep {
+  background-image: url(/assets/shep.jpeg);
+}
+
+.recipes__confit {
+  background-image: url(/assets/duck.webp);
 }
 
 .recipes__label {
@@ -91,7 +126,8 @@
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  text-decoration: none;
   color: white;
+  font-family: Italian;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=index.css.map */
