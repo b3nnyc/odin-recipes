@@ -114,15 +114,15 @@ a {
 }
 
 .recipes__lasagna {
-  background-image: url(assets/lasagna.jpeg);
+  background-image: url(../assets/lasagna.JPEG);
 }
 
 .recipes__shep {
-  background-image: url(assets/shep.jpeg);
+  background-image: url(../assets/shep.jpeg);
 }
 
 .recipes__confit {
-  background-image: url(assets/duck.webp);
+  background-image: url(../assets/duck.webp);
 }
 
 .recipes__label {
