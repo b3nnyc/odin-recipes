@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Italian;
+  src: url(/assets/Italian.otf);
+}
+
+@font-face {
+  font-family: Cafe;
+  src: url(/assets/cafe.ttf);
+}
+
+.nav {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid black;
+  height: 100px;
+  background-color: red;
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo img {
+    margin-right: 3%;
+    width: 80px;
+    height: 80px;
+    -webkit-filter: invert(100%);
+  }
+  &__title {
+    width: max-content;
+    font-family: Italian;
+    font-size: 3.5rem;
+    color: white;
+    width: 400px;
+  }
+  &__search {
+    border: none;
+    width: 200px;
+    padding-left: 60px;
+  }
+}
+
+.parent {
+  background-color: #e9e9ec;
+  padding-top: 3%;
+  height: 100%;
+  &__title {
+    font-family: Italian;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  &__image {
+    width: 700px;
+    border-radius: 10px;
+  }
+  &__story {
+    padding-top: 5%;
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+  }
+  &__ingredients-title,
+  &__recipe-title {
+    font-family: Italian;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  &__pasta,
+  &__sauce,
+  &__story,
+  &__recipe-instructions,
+  &__ingredients-list {
+    line-height: 1.8;
+    font-family: Cafe;
+  }
+  &__ingredients-list {
+    list-style-type: circle;
+    padding-bottom: 10%;
+  }
+  &__recipe-instructions {
+    width: 30vw;
+    padding-bottom: 10%;
+  }
+}

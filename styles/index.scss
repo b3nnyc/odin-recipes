@@ -7,8 +7,8 @@ a {
 }
 
 @font-face {
-    font-family: Italian;
-    src: url(/assets/Italian.otf);
+  font-family: Italian;
+  src: url(/assets/Italian.otf);
 }
 
 .nav {
@@ -18,16 +18,14 @@ a {
   border-bottom: 5px solid black;
   height: 100px;
   background-color: red;
-  &-left {
+  &__logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
-  &__logo {
-    margin-right: 4%;
-  }
   &__logo img {
-    width: 70px;
+    margin-right: 3%;
+    width: 80px;
+    height: 80px;
     -webkit-filter: invert(100%);
   }
   &__title {
@@ -45,18 +43,18 @@ a {
 }
 
 .parent {
-    background-color: #E9E9EC;
-    padding-top: 5%;
-    height: 85vh;
+  background-color: #e9e9ec;
+  padding-top: 3%;
+  height: 85vh;
 }
 
 .giphy-embed {
   margin: auto;
-  margin-bottom: 7%;
+  margin-bottom: 2%;
   display: block;
   border-radius: 15px;
-  width: 480px;
-  height: 360px;
+  width: 600px;
+  height: 450px;
 }
 
 .recipes {
@@ -74,7 +72,7 @@ a {
   &__shep,
   &__confit {
     border: 1px solid black;
-    width: 30vw;
+    width: 25vw;
     height: 200px;
     border-radius: 10px;
     display: flex;
@@ -83,15 +81,22 @@ a {
     font-style: none;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: transform 0.2s;
+    filter: grayscale(0.2);
+  }
+  &__lasagna:hover,
+  &__shep:hover,
+  &__confit:hover {
+    transform: scale(1.05);
   }
   &__lasagna {
-      background-image: url(/assets/lasagna.jpeg);
+    background-image: url(/assets/lasagna.jpeg);
   }
   &__shep {
-      background-image: url(/assets/shep.jpeg);
+    background-image: url(/assets/shep.jpeg);
   }
   &__confit {
-      background-image: url(/assets/duck.webp);
+    background-image: url(/assets/duck.webp);
   }
   &__label {
     display: flex;

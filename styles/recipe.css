@@ -1,1 +1,119 @@
-/* No CSS *//*# sourceMappingURL=recipe.css.map */
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Italian;
+  src: url(/assets/Italian.otf);
+}
+
+@font-face {
+  font-family: Cafe;
+  src: url(/assets/cafe.ttf);
+}
+
+.nav {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 5px solid black;
+  height: 100px;
+  background-color: red;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo img {
+  margin-right: 3%;
+  width: 80px;
+  height: 80px;
+  -webkit-filter: invert(100%);
+}
+
+.nav__title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: Italian;
+  font-size: 3.5rem;
+  color: white;
+  width: 400px;
+}
+
+.nav__search {
+  border: none;
+  width: 200px;
+  padding-left: 60px;
+}
+
+.parent {
+  background-color: #e9e9ec;
+  padding-top: 3%;
+  height: 100%;
+}
+
+.parent__title {
+  font-family: Italian;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container__image {
+  width: 700px;
+  border-radius: 10px;
+}
+
+.container__story {
+  padding-top: 5%;
+  width: 40vw;
+  margin: auto;
+  text-align: center;
+}
+
+.container__ingredients-title, .container__recipe-title {
+  font-family: Italian;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.container__pasta, .container__sauce, .container__story, .container__recipe-instructions, .container__ingredients-list {
+  line-height: 1.8;
+  font-family: Cafe;
+}
+
+.container__ingredients-list {
+  list-style-type: circle;
+  padding-bottom: 10%;
+}
+
+.container__recipe-instructions {
+  width: 30vw;
+  padding-bottom: 10%;
+}
+/*# sourceMappingURL=recipe.css.map */

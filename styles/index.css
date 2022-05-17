@@ -24,25 +24,19 @@ a {
   background-color: red;
 }
 
-.nav-left {
+.nav__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.nav__logo {
-  margin-right: 4%;
-}
-
 .nav__logo img {
-  width: 70px;
+  margin-right: 3%;
+  width: 80px;
+  height: 80px;
   -webkit-filter: invert(100%);
 }
 
@@ -63,18 +57,18 @@ a {
 }
 
 .parent {
-  background-color: #E9E9EC;
-  padding-top: 5%;
+  background-color: #e9e9ec;
+  padding-top: 3%;
   height: 85vh;
 }
 
 .giphy-embed {
   margin: auto;
-  margin-bottom: 7%;
+  margin-bottom: 2%;
   display: block;
   border-radius: 15px;
-  width: 480px;
-  height: 360px;
+  width: 600px;
+  height: 450px;
 }
 
 .recipes__title {
@@ -95,7 +89,7 @@ a {
 
 .recipes__lasagna, .recipes__shep, .recipes__confit {
   border: 1px solid black;
-  width: 30vw;
+  width: 25vw;
   height: 200px;
   border-radius: 10px;
   display: -webkit-box;
@@ -106,6 +100,17 @@ a {
   font-style: none;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-filter: grayscale(0.2);
+          filter: grayscale(0.2);
+}
+
+.recipes__lasagna:hover, .recipes__shep:hover, .recipes__confit:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .recipes__lasagna {
