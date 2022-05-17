@@ -8,7 +8,7 @@ a {
 
 @font-face {
   font-family: Italian;
-  src: url(assets/Italian.otf);
+  src: url(../assets/Italian.otf);
 }
 
 .nav {
